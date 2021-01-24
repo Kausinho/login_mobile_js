@@ -2,28 +2,99 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Open Sans";
 }
 
-/*Sessão header*/
-
-header{
-    background-color: #5e3ea1;
-    padding: 10px 2%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
+/*Classes*/
+    .center{
+        max-width: 960px;
+        padding: 0 2%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
 /******/
 
-/*Sessão Logo*/
+/*Sessão header*/
+    header{
+        background-color: #5e3ae1;
+        padding: 10px 0;   
+    }
+/******/
 
-.logo{
-    width: 50%;
-    color: white;
-}
+/*Sessão logo*/
+    .logo{
+        width: 50%;
+        color: white;
+    }
 
-.menu-dekstop{
-    width: 50%;
-}
+    .logo h2{
+        font-weight: 300;
+    }
+/******/
 
+/*Sessão Mennu*/
+    .menu-desktop{
+        width: 50%;
+    }
+
+    .menu-desktop ul li{
+        display: inline-block;
+        margin: 8px 10px;
+    }
+
+    .menu-desktop ul li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-mobile{
+        display: none;
+        text-align: right;
+        width: 50%;
+    }
+
+    .menu-mobile i{
+        cursor: pointer;
+        color: white;
+    }
+
+    .menu-mobile ul{
+        background-color: white;
+        opacity: 0;
+        transition: 1s;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        text-align: center;
+    }
+
+    .show-menu{
+        opacity: 1 !important;
+    }
+
+    .menu-mobile ul li a{
+        color:#5e3ae1;
+        text-decoration: none;
+        font-size: 17px;
+        padding: 8px 0;
+        display: block;
+    }
+/******/
+
+/*Media Querys*/
+    @media screen and (max-width: 768px){
+        .menu-mobile{
+            display: block;
+        }
+        /*
+        .menu-mobile ul{
+            display: none;
+        }
+        */
+        .menu-desktop{
+            display: none;
+        }
+    }
 /******/
