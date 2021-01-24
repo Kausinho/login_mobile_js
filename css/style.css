@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Sessão header*/
+
+header{
+    background-color: #5e3ea1;
+    padding: 10px 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/******/
+
+/*Sessão Logo*/
+
+.logo{
+    width: 50%;
+    color: white;
+}
+
+.menu-dekstop{
+    width: 50%;
+}
+
+/******/
